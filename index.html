@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Weather API Demo</title>
+    <title>Neon Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Weather App (Open Meteo)</h1>
 
-    <label>Şehir adı:</label>
-    <input id="city" placeholder="İstanbul">
-    <button onclick="getWeather()">Getir</button>
+    <h1 class="title">Neon Weather App</h1>
 
-    <pre id="result"></pre>
+    <div class="input-area">
+        <select id="citySelect"></select>
+        <button onclick="getWeather()">Hava Durumunu Getir</button>
+    </div>
+
+    <div id="weather-container"></div>
 
     <script src="script.js"></script>
 </body>
